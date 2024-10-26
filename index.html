@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Valider(event) {
+            event.preventDefault();
+
+            const nom = document.querySelector('input[type="text"]').value;
+            const email = document.querySelector('input[type="email"]').value;
+
+            if (!nom) {
+                alert("Le champ 'Nom' ne peut pas être vide.");
+                return;
+            }
+
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                alert("Veuillez entrer une adresse e-mail valide.");
+                return;
+            }
+
+            alert("Message envoyé avec succès !");
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="text-align: center;">YAHYA NORRI</h1>
+    <hr>
+    <section class="apropos">
+        <h2>A propos de moi</h2>
+        <p>Étudiant à l'EMSI, je suis encore au début de mon parcours académique, mais je m'engage pleinement à renforcer mes compétences techniques et à approfondir mes connaissances dans le domaine de l'informatique.</p>
+    </section>
+    <hr>
+    <section class="hobbies" >
+        <h2>Hobbies et Objectifs</h2>
+        <p> Hobbies:</p>
+        <ul>
+            <li>Jeux video</li>
+            <li>Sports</li>
+        </ul>
+        <p>Objectifs:</p>
+        <ol type="1">
+            <li>Développer me compétences en développement WEB</li>
+            <li>Bien comprendre le concept des bases de données</li>
+        </ol>
+    </section>
+    <hr>
+    <section class="tableau">
+        <h2> Tableau d'amis:</h2>
+
+        <table>
+            <tr>
+                <th>Nom</th>
+                <th>Âge</th>
+                <th>Ville</th>
+                <th>Profile</th>
+            </tr>
+            <tr>
+                <td>Karrach Mohamed Reda</td>
+                <td>19</td>
+                <td>Casablanca</td>
+                <td><a href="https://www.instagram.com/reda.krc_/">Instagram</a></td> 
+            </tr>
+            <tr>
+                <td>Ismael Faida</td>
+                <td>19</td>
+                <td>Casablanca</td>
+                <td><a href="https://www.instagram.com/ismail_faida/">Instagram</a></td> 
+            </tr>
+            <tr>
+                <td>Kabil Mohamed</td>
+                <td>20</td>
+                <td>Casablanca</td>
+                <td><a href="https://www.instagram.com/mkabil1/">Instagram</a></td> 
+            </tr>
+        </table>
+    </section>
+    <hr>
+    <section class="contact">
+        <h2> Contact</h2>
+        <form onsubmit="Valider(event)">
+            <label for="nom">Nom</label><br>
+            <input type="text" required placeholder="Votre nom"><br>
+            <label for="email">Email</label><br>
+            <input type="email" required placeholder="Exemple@exemple.com"><br>
+            <label for="message">Message</label><br>
+            <textarea name="message"></textarea><br>
+            <button type="submit" class="btn-envoyer">Envoyer</button>
+        </form>
+    </section>
+    
+</body>
+</html>

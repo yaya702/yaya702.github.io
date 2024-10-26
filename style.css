@@ -1,0 +1,86 @@
+body{
+    background-color:beige ;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.apropos{
+    padding: 2% 1% 2% 1%;
+}
+.hobbies{
+    padding: 2% 1% 2% 1%;
+}
+.tableau{
+    padding: 2% 1% 2% 1%;
+}
+.contact{
+    padding: 2% 1% 2% 1%;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+}
+
+ul{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    font-weight: bold;
+}
+
+ol{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    font-weight: bold;
+}
+
+table,th,tr,td{
+    border: solid 1px;
+    border-collapse: collapse;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+th{
+    background-color: lightgrey;
+}
+
+label{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input{
+    width: 20%;
+    padding: 1%;
+    border: solid 1px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+textarea{
+    width: 20%;
+    padding: 1%;
+    border: solid 1px;
+    border-radius: 5px;
+}
+
+.btn-envoyer{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 8px;
+    margin-left: 110px;
+}
+
+.btn-envoyer:hover{
+    background-color: #27672a;
+}
